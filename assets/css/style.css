@@ -24,10 +24,6 @@ header h1 span {
     color: #ffee32;
 }
 
-main span{
-    color: #f7b600;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -43,25 +39,15 @@ nav ul li a {
     color: #d6d6d6;
 }
 
-a{
+a {
     text-decoration: none;
-}
-
-footer a{
-    text-decoration: none;
-    color: #ffee32;
-}
-
-footer p{
-    background-color: #333;
-    color: #e0e0e2;
 }
 
 main {
     margin: 1.5em 5em;
     display: flex;
     flex-direction: column;
-    justify-content:  center;
+    justify-content: center;
     text-align: justify;
     font-size: 1.2em;
 }
@@ -70,7 +56,19 @@ main p {
     justify-content: center;
 }
 
-footer{
-    background-color: #333;
+footer {
+    padding: 1em 0em;
+    background-color: #333533;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
+footer a {
+    text-decoration: none;
+    color: #ffee32;
+}
+
+footer p {
+    color: #e0e0e2;
+}
