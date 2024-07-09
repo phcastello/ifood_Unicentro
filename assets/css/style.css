@@ -6,6 +6,13 @@
     font-family: "Mukta", sans-serif;
 }
 
+.container {
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -31,8 +38,12 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 1em;
     color: #f7b600;
+}
+
+.separator {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 nav ul li a {
@@ -50,18 +61,49 @@ main {
     justify-content: center;
     text-align: justify;
     font-size: 1.2em;
+    position: relative;
 }
 
 main p {
     justify-content: center;
 }
 
+main span {
+    text-decoration: underline;
+}
+
+.vendedores .vendedor {
+    background-color: #a3a3a3;
+    padding: 2em;
+    border-radius: 20px;
+    list-style: none;
+    margin-top: 2em;
+    text-align: start;
+}
+
+.cardapio {
+    list-style: disc;
+    margin-left: 1.3em;
+}
+
+.link-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-contato .socials {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link-contato .socials a img{
+    width: 4em;
+}
+
 footer {
-    padding: 1em 0em;
+    position: fixed bottom;
     background-color: #333533;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1em 1em;
 }
 
 footer a {
@@ -71,4 +113,16 @@ footer a {
 
 footer p {
     color: #e0e0e2;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        font-size: 90%;
+        flex-direction: column;
+    }
+
+    main {
+        margin: 2em 2em;
+    }
 }
