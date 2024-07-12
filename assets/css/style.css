@@ -23,6 +23,10 @@ header {
     font-size: 1.2em;
 }
 
+header a {
+    transition: 0.3s;
+}
+
 header h1 {
     color: #d6d6d6;
 }
@@ -38,7 +42,7 @@ nav ul {
 }
 
 nav ul li {
-    color: #f7b600;
+    color: #ffee32;
 }
 
 .separator {
@@ -48,6 +52,7 @@ nav ul li {
 
 nav ul li a {
     color: #d6d6d6;
+    transition: 0.3s;
 }
 
 a {
@@ -81,6 +86,10 @@ main span {
     text-align: start;
 }
 
+.vendedor div {
+    margin-top: 1.2em;
+}
+
 .cardapio {
     list-style: disc;
     margin-left: 1.3em;
@@ -96,23 +105,60 @@ main span {
     justify-content: flex-start;
 }
 
-.link-contato .socials a img{
+.socials a {
+    transition: 0.3s;
+}
+
+.socials a img{
     width: 4em;
+}
+
+.contate-nos span a {
+    transition: 0.3s;
 }
 
 footer {
     position: fixed bottom;
     background-color: #333533;
-    padding: 1em 1em;
+    padding: 1em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer a {
     text-decoration: none;
     color: #ffee32;
+    transition: 0.3s;
 }
 
 footer p {
     color: #e0e0e2;
+}
+
+footer nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header a:hover {
+    transform: scale(1.12);
+}
+
+nav ul li a:hover {
+    color: #ffee32;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+}
+
+.contate-nos span a:hover {
+    color: #ffee32;
+}
+
+footer p a:hover {
+    font-size: 120%;
 }
 
 @media (max-width: 900px) {
@@ -124,5 +170,16 @@ footer p {
 
     main {
         margin: 2em 2em;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em 0em;
+    }
+
+    footer nav {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
     }
 }
