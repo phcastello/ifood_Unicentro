@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,18 @@
     <title>Campus Santa Cruz</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <style>
+    .skip-link{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:.5rem 1rem;background:#ffee32;color:#333533;z-index:1000}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    a:focus, button:focus, input:focus{outline:3px solid #ffee32; outline-offset:2px}
+    </style>
+    
 </head>
 
 <body>
+<a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
     <div class="container">
         <header>
             <a href="./index.html">
@@ -27,7 +36,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="conteudo-principal">
             <div class="desc">
                 <h2>Aqui se localizam todos os vendedores que estudam no campus <u>Santa Cruz</u> da Unicentro.</h2>
             </div>
@@ -124,8 +133,8 @@
                     <div class="link-contato">
                         <h2>Contato</h2>
                         <article class="socials">
-                            <a href="https://www.instagram.com/leozino__/" target="_blank">
-                                <img src="./assets/images/instagram.png" alt="">
+                            <a href="https://www.instagram.com/leozino__/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram">
+                                <img src="./assets/images/instagram.png" alt="Instagram">
                             </a>
                         </article>
                     </div>
@@ -167,11 +176,11 @@
                     <div class="link-contato">
                         <h2>Contato</h2>
                         <article class="socials">
-                            <a href="https://wa.me/5542988434628" target="_blank">
-                                <img src="./assets/images/whatsapp.png" alt="">
+                            <a href="https://wa.me/5542988434628" target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp">
+                                <img src="./assets/images/whatsapp.png" alt="WhatsApp">
                             </a>
-                            <a href="https://www.instagram.com/cake_minis/" target="_blank">
-                                <img src="./assets/images/instagram.png" alt="">
+                            <a href="https://www.instagram.com/cake_minis/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram">
+                                <img src="./assets/images/instagram.png" alt="Instagram">
                             </a>
                         </article>
                     </div>
@@ -181,8 +190,8 @@
         </main>
         <footer>
             <div class="infos">
-                <p>Desenvolvido por: <a href="https://github.com/phcastello" target="_blank">Pedro Castello</a> e <a
-                        href="https://github.com/oribaspedro" target="_blank">Pedro Ribas</a>.
+                <p>Desenvolvido por: <a href="https://github.com/phcastello" target="_blank" rel="noopener noreferrer">Pedro Castello</a> e <a
+                        href="https://github.com/oribaspedro" target="_blank" rel="noopener noreferrer">Pedro Ribas</a>.
                 <p>Todos os direitos reservados.</p>
             </div>
             <nav>
